@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Jaspreet Singh</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script defer src="contact.js"></script>
+</head>
+<body>
+
+<header class="container">
+    <h1>Let's Connect</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you'd like to discuss opportunities, collaborate on a project, or just say hello, feel free to reach out! I'd love to hear from you.</p>
+        
+        <div class="contact-grid">
+            <div class="contact-details">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> <a href="mailto:w0847545@myscc.ca">w0847545@myscc.ca</a></p>
+                <p><strong>Phone:</strong> +1-437-667-1612</p>
+                <p><strong>Location:</strong> Windsor, Canada</p>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form id="contactForm" onsubmit="return showAlert()">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="firstname" required>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lastname" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Message:</label>
+                    <textarea id="subject" name="subject" rows="5" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="container">
+    <p>© 2024 Jaspreet Singh. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

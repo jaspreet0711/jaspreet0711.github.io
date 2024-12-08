@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'pt_sansbold';
+    src:  url('PTS75F-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h2 {
+    font-family: 'pt_sansbold_italic', cursive;
+}
+@font-face {
+    font-family: 'pt_sansbold_italic';
+    src: url('PTS76F-webfont.eot');
+    src: url('PTS76F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTS76F-webfont.woff2') format('woff2'),
+         url('PTS76F-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'carbontyperegular';
+    src: url('carbontype-webfont.eot');
+    src: url('carbontype-webfont.eot?#iefix') format('embedded-opentype'),
+         url('carbontype-webfont.woff2') format('woff2'),
+         url('carbontype-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+/***********************************************
+Header Information
+**********************************************/
+ul{
+    list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding: 0 30px;
+  color: #0e0000;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: lightgray;
+  box-sizing: border-box;
+  margin: 0 5px; 
+}
+
+header{
+    text-align: right;
+    padding-top: 40px;
+    background-color:rgb(124, 40, 40);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    height: 10em;
+    color:white;
+}
+header h2{
+    position: relative;  text-align: center;
+    font-size:2em;
+    color: #f1e6e6;
+}
+
+h1 {
+    font-size: 4.8em;
+    font-family: luckiestGuy, sans-serif;
+}
+
+
+
+/****************************
+Nav
+***************************/
+nav a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited{
+    color: blue;
+}
+
+h1 + p a:link {
+    color: white;
+    font-size: 1.5em;
+}
+
+h1 + p a:visited{
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*******************************
+**********************************/
+
+/*** Body Information
+*******************************************/
+main article, main aside {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-attachment : fixed;
+	background-blend-mode:soft-light;
+    background-color: rgb(200, 200, 200);
+    padding:0 10px 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    font-size: 1.6em;
+}
+
+main > h2{ 
+    text-align: center;
+    font-size: 2em;
+    line-height: 2.8em;
+    font-style: italic;
+    margin: 0.5em 0px;
+    background-color: lightgray;
+}
+main figure + p{
+    font-family: "Josefin Sans", sans-serif;
+}
+main article h2+ p{
+    font-family: 'carbontyperegular', cursive;
+}
+main aside *p{
+    font-family: 'carbontyperegular', serif;
+}
+
+
+p{
+    font-size: 1em;
+    letter-spacing: 0.05em;
+}
+image{
+    float: right;
+}
+
+
+/***********************
+flex parts 
+***********************/
+main figure a:link{
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:visited{
+        color: black;
+    }
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main > h2 {
+    width: 100%;
+}
+main article, main aside{
+    width: 30%;
+}
+
+article, aside{
+    display: flex;
+    flex-direction: column;
+}
+
+article p:last-child, aside p:last-child{
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+
+/**************************
+Footer styles
+*****************************/
+footer{
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    flex-grow: 2;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
